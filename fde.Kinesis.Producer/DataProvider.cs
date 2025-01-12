@@ -18,7 +18,7 @@ namespace fde.Kinesis.Producer
 					var serializedResponse = await httpResponse.Content.ReadAsStringAsync();
 					var images = JsonSerializer.Deserialize<List<Image>>(serializedResponse);
 
-					response = images.Select(x => new Request(x.url, $"Image is by {x.author}")).ToList();
+					response = images.Select(x => new Request(x.download_url, $"Image is by {x.author}")).ToList();
 					
 				}
 
