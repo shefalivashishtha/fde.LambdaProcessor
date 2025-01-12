@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-fde.Kinesis.ProducerWorker-37c8b5bd-18bf-4d7a-9944-0cd037373c82</UserSecretsId>
+    <DebugType>Portable</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="AWSSDK.Kinesis" Version="3.7.402.54" />
+  </ItemGroup>
+</Project>

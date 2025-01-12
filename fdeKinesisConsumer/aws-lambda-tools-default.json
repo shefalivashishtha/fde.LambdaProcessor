@@ -1,0 +1,14 @@
+﻿{
+  "Information": [
+    "This processor reads kinesis stream and sends to api gateway to upload the recieved request"
+  ],
+  "profile": "",
+  "region": "eu-west-1",
+  "configuration": "Release",
+  "framework": ".net8.0",
+  "function-runtime": "dotnet8",
+  "function-memory-size": 256,
+  "function-timeout": 30,
+  "function-handler": "fdeKinesisConsumer::fdeKinesisConsumer.Function::FunctionHandler"
+}
+
