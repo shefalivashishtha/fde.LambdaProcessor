@@ -1,7 +1,7 @@
 ﻿{
   "Information": [
     "This file inserts and returns images and their description in local db"
-  ],inst
+  ],
   "profile": "",
   "region": "eu-west-1",
   "configuration": "Release",
