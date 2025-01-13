@@ -22,9 +22,11 @@ public class ProducerWorker : BackgroundService
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
             }
-            await Process();
-
-            await Task.Delay(1000, stoppingToken);
+             
+                await Process();
+                
+                // added below to not exhaust the resources
+                Thread.Sleep(new TimeSpan(0,58,0));
         }
     }
 
