@@ -45,8 +45,6 @@ public class ProducerWorker : BackgroundService
 
                 _logger.LogInformation($"Request Status : {response.HttpStatusCode} for Request : {request.ImageUrl}, {request.Description}");
             }
-
-            Thread.Sleep(new TimeSpan(0, 58, 0));
         }
     }
 
